@@ -79,14 +79,6 @@ The application will be available at `http://localhost:4200`.
 
 The frontend communicates with the backend API at `http://localhost:3000` by default.
 
-### Change the API URL
-To update the backend API URL, modify `src/environments/environment.ts`:
-```typescript
-export const environment = {
-    production: false,
-    apiUrl: 'http://localhost:3000',
-};
-```
 
 ---
 
