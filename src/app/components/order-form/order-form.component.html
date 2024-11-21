@@ -1,0 +1,15 @@
+<form [formGroup]="orderForm" (ngSubmit)="addOrder()">
+  <mat-form-field>
+    <mat-label>Order name</mat-label>
+    <input matInput formControlName="name" required />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Quantity</mat-label>
+    <input matInput formControlName="quantity" type="number" required />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Price per unit</mat-label>
+    <input matInput formControlName="price_per_unit" type="number" required />
+  </mat-form-field>
+  <button mat-raised-button color="primary" type="submit">Add</button>
+</form>

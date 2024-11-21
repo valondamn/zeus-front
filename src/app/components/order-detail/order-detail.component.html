@@ -1,0 +1,9 @@
+<h2 mat-dialog-title>Detail:</h2>
+<mat-dialog-content>
+  <p><strong>Name:</strong> {{ data.name }}</p>
+  <p><strong>Quantity:</strong> {{ data.quantity }}</p>
+  <p><strong>Price per unit:</strong> {{ data.price_per_unit | currency }}</p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>
