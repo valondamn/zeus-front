@@ -1,28 +1,124 @@
-# Zeus
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.13.
+### Frontend Documentation (`order-management-frontend/README.md`)
 
-## Development server
+```markdown
+# Order Management Frontend
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Description
+The frontend for the Order Management System, built with Angular and Angular Material.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Prerequisites
 
-## Build
+Before you start, make sure you have the following installed:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Node.js** (v14 or later)
+2. **Angular CLI** (v16 or later)
+   ```bash
+   npm install -g @angular/cli
+   ```
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Installation
 
-## Running end-to-end tests
+### Step 1: Clone the repository
+```bash
+git clone <repository-url>
+cd frontend
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Step 2: Install dependencies
+```bash
+npm install
+```
 
-## Further help
+This will install all required libraries and modules, including:
+- Angular Material
+- Reactive Forms
+- Angular Animations
+- Angular HTTP Client
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# zeus-front
+---
+
+## Required Modules
+
+The project uses the following Angular modules and libraries:
+
+### Core Modules
+- **BrowserModule**: Enables Angular applications to run in the browser.
+- **AppRoutingModule**: Manages application routing.
+- **ReactiveFormsModule**: For building and managing reactive forms.
+
+### Angular Material Modules
+- **MatInputModule**: Provides input fields with Angular Material styling.
+- **MatButtonModule**: Provides styled buttons.
+- **MatTableModule**: Displays tabular data in Material Design style.
+- **MatFormFieldModule**: Wraps input fields for Material Design forms.
+- **MatDialogModule**: Adds support for modals and dialog boxes.
+
+### Other Modules
+- **HttpClientModule**: Used for HTTP communication with the backend.
+- **BrowserAnimationsModule**: Enables animations in Angular Material.
+
+---
+
+## Usage
+
+### Step 3: Start the development server
+```bash
+ng serve
+```
+
+The application will be available at `http://localhost:4200`.
+
+---
+
+## Configuration
+
+The frontend communicates with the backend API at `http://localhost:3000` by default.
+
+### Change the API URL
+To update the backend API URL, modify `src/environments/environment.ts`:
+```typescript
+export const environment = {
+    production: false,
+    apiUrl: 'http://localhost:3000',
+};
+```
+
+---
+
+## Features
+
+1. **Order Table**: Displays a list of all orders with options to view details and delete.
+2. **Order Form**: Allows adding new orders by specifying `name`, `quantity`, and `price_per_unit`.
+3. **Order Details Modal**: Opens a modal dialog to view detailed information about a selected order.
+
+---
+
+## Notes
+
+1. Ensure that the backend API is running and accessible at `http://localhost:3000`.
+2. To install Angular Material manually:
+   ```bash
+   ng add @angular/material
+   ```
+
+---
+
+## Technologies Used
+
+- **Framework**: Angular
+- **UI Library**: Angular Material
+- **Language**: TypeScript
+```
+
+---
+
+### Backend Documentation (`order-management-backend/README.md`)
+
+Вам не нужно изменять backend-документацию, если она уже соответствует вашему проекту. Если хотите, я могу дополнить backend-документацию с учётом дополнительных инструкций. 
+
+Если потребуется добавить что-то ещё, напишите! 😊
